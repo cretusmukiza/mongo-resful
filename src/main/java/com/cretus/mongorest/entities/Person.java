@@ -41,11 +41,52 @@ public class Person {
         }
         return diff;
     }
+    
 
     @Override
     public String toString() {
         return "Person [age=" + age + ", dateOfBirth=" + dateOfBirth + ", favouriteBooks=" + favouriteBooks + ", name="
                 + name + ", personId=" + personId + "]";
+    }
+
+    public String getPersonId() {
+        return personId;
+    }
+
+    public void setPersonId(String personId) {
+        this.personId = personId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public long getAge() {
+        return age;
+    }
+
+    public void setAge(long age) {
+        this.age = age;
+    }
+
+    public List<String> getFavouriteBooks() {
+        return favouriteBooks;
+    }
+
+    public void setFavouriteBooks(List<String> favouriteBooks) {
+        this.favouriteBooks = favouriteBooks;
+    }
+
+    public Date getDateOfBirth() {
+        return dateOfBirth;
+    }
+
+    public void setDateOfBirth(Date dateOfBirth) {
+        this.dateOfBirth = dateOfBirth;
     }
 
    

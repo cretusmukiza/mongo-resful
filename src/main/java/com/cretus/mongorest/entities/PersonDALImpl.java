@@ -89,8 +89,10 @@ public class PersonDALImpl implements PersonDAL {
     }
 
     @Override
-    public void deletePerson(Person person){
-        mongoTemplate.remove(person);
+    public void deletePerson(String personId){
+        Query query = new Query();
+        query.addCriteria(Criteria.where("personId").is(personId));
+        mongoTemplate.remove(query, Person.class);
     }
 
 }

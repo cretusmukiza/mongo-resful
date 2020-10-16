@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class MongorestApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MongorestApplication.class, args);
+		SpringApplication.run(MongorestApplication.class, args); 
 	}
 
 }

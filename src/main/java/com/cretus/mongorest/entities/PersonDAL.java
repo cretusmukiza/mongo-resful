@@ -24,6 +24,6 @@ public interface PersonDAL {
 
     Person updateOnePerson(Person person);
 
-    void deletePerson(Person person);
+    void deletePerson(String personId);
 
 }
